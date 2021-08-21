@@ -6,6 +6,17 @@ module.exports = {
   extends: [
     'airbnb-base',
   ],
+  overrides: [
+    {
+      files: [
+        '**/*.test.js',
+        '**/*.test.ts',
+      ],
+      env: {
+        jest: true,
+      },
+    },
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 12,
